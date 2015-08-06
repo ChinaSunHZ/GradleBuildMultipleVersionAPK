@@ -34,12 +34,14 @@ android {
     buildTypes {
 
         dev {
+            signingConfig signingConfigs.dev
             applicationIdSuffix ".dev"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
         release {
+            signingConfig signingConfigs.release
             applicationIdSuffix ".release"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -63,3 +65,4 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
+
