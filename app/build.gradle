@@ -50,12 +50,12 @@ android {
 
     productFlavors {
         flavors_dev {
-            manifestPlaceholders = [str: "devStr", package_name: "com.sunhz.xxx.dev"]
+            manifestPlaceholders = [str: "devStr", package_name: "com.sunhz.xxx.dev", icon: "@mipmap/ic_launcher_dev"]
             resValue("string", "versionFlag", "dev版本")
         }
 
         flavors_release {
-            manifestPlaceholders = [str: "releaseStr", package_name: "com.sunhz.xxx.release"]
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.sunhz.xxx.release", icon: "@mipmap/ic_launcher_release"]
             resValue("string", "versionFlag", "release版本")
         }
     }

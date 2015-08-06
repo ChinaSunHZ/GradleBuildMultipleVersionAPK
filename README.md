@@ -19,4 +19,4 @@ keyStore passowrd 和 key password 都为: gradle
 
 
 ###效果图
-![image](https://github.com/ChinaSunHZ/GradleBuildMultipleVersionAPK/raw/master/more_apk.jpg)
+![image](https://github.com/ChinaSunHZ/GradleBuildMultipleVersionAPK/raw/master/more_apk.png)
