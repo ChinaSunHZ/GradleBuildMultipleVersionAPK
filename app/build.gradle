@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc3"
+
+
+    signingConfigs {
+        dev {
+            storeFile file("../keystore.key")
+            storePassword "gradle"
+            keyAlias "GradleBuildMultipleVersionAPK"
+            keyPassword "gradle"
+        }
+        release {
+            storeFile file("../keystore.key")
+            storePassword "gradle"
+            keyAlias "GradleBuildMultipleVersionAPK"
+            keyPassword "gradle"
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.sunhz.gradlebuildmultipleversionapk"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    buildTypes {
+
+        dev {
+            applicationIdSuffix ".dev"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            applicationIdSuffix ".release"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        flavors_dev {
+            manifestPlaceholders = [str: "devStr", package_name: "com.sunhz.xxx.dev"]
+            resValue("string", "versionFlag", "dev版本")
+        }
+
+        flavors_release {
+            manifestPlaceholders = [str: "releaseStr", package_name: "com.sunhz.xxx.release"]
+            resValue("string", "versionFlag", "release版本")
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
