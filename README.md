@@ -7,6 +7,8 @@
 keyStore passowrd 和 key password 都为: gradle
 ```
 
+![image](https://github.com/ChinaSunHZ/GradleBuildMultipleVersionAPK/raw/master/more_apk.jpg)
+
 ####文章地址:
 [Android 项目利用 Android Studio 和 Gradle 打包多版本APK ， 作者：Spencer](http://spencer-dev.com/blog/2015/android-xiang-mu-li-yong-android-studio-he-gradle-da-bao-duo-ban-ben-apk.html/ "Android 项目利用 Android Studio 和 Gradle 打包多版本APK ， 作者：Spencer")
 
