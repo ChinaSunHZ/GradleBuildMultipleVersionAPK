@@ -10,6 +10,8 @@ keyStore passowrd 和 key password 都为: gradle
 
 
 网名 : 给立乐 (Spencer)
+
 邮箱 : <China.SunHZ@Gmail.com>
-博客地址 : <www.Spencer-dev.com>
+
+博客地址 : [给立乐的技术博客](http://www.Spencer-dev.com "给立乐的技术博客")
 
